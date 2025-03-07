@@ -1,0 +1,63 @@
+.login-reg-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width:  35.25rem;
+    min-width: 25rem;
+    min-height: 5rem;
+    margin: 6rem auto 2rem;
+    padding: 1rem;
+    border: 1px solid var(--text-color);
+    background-color: #ffde5900; /*transparent*/
+    border-radius: 6px;
+    box-shadow: 0 0.125rem 0.3125rem #f0b1328e;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+ }
+
+ .profile-container{
+    line-height: 2rem;
+ }
+ 
+ .login-reg-container h3{
+    text-align: center;
+ }
+
+ .login-reg-container:hover{
+    box-shadow: 0 0.325rem 0.3125rem #f0b132;
+    /* transition: all 0.2s ease; */
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+    margin: 8px auto;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+button:hover{
+    background-color: var(--accent-1);
+}
+
+/* Shake effect:*/
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.3s ease-in-out;
+}

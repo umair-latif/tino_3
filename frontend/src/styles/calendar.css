@@ -1,0 +1,64 @@
+/****************************************************/
+/********** styles for calendar ******/
+/****************************************************/
+*{
+    user-select: none;
+}
+.calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.fc .fc-header-toolbar {
+    /* background-color: var(--highlight); */
+    color: var(--color);
+}
+
+.fc-daygrid-day-number {
+    color: var(--text-color);
+}
+
+.fc-daygrid-event {
+    background-color: var(--accent-2);
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+    background-color: var(--accent-2);
+    border-color: var(--fc-button-active-border-color);
+    color: var(--fc-button-text-color);
+}
+
+.fc .fc-button-primary:disabled {
+    background-color: var(--bg-color);
+    border-color: var(--fc-button-border-color);
+    color: var(--read-only-text);
+}
+.fc .fc-button {
+    padding: 0.5rem;
+    border: 1px solid var(--accent-2);
+    background-color: var(--bg-color);
+    color: var(--color);
+    /* border-radius: 2rem; */
+}
+.fc .fc-button:hover{
+    background-color:var(--highlight);
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: 1px solid var(--accent-2);
+}
+  
+.fc .fc-button:hover{
+    background-color: var(--highlight);
+    color: var(--color);
+    transition: background-color 0.3s ease-in-out;
+}
+.fc-button.fc-button-active{
+    background-color: var(--highlight);
+    color: var(--color);
+    }
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+    /* background-color: var(--fc-button-active-bg-color); */
+    border-color: var(--fc-button-active-border-color);
+    /* color: var(--fc-button-text-color); */
+}

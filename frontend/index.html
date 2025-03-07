@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiNo: Tiny Notes & More</title>
+    <link rel="icon" href="./src/assets/img/TiNo_fav.png" type="image/png">
+    <link rel="preload" href="./src/styles/index.css" as="style">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/assets/icons/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="./css/tino.css"> -->
+     <!-- hide content until styles are ready (to avoid unstyled content flashing for a split second)-->
+    <style>
+        body {
+          visibility: hidden;
+          opacity: 0;
+          transition: opacity 0.2s ease-in-out;
+        }
+      </style>
+</head>
+<body>
+    <!-- <div class="header" id="header"> -->
+        <!-- Header will loaded here -->
+        <!-- <div class="hamburger">☰</div>
+        <div class="logo" id="header-logo"></div>
+         -->
+    <!-- </div> -->
+
+    <div class="menu-container">
+        <div class="hamburger">☰</div>
+        <div class="menu-logo"></div>
+        <div class="menu-items">
+            <div class="logo" id="menu-logo"></div>
+            <div class="menu-item toggle-menu" onclick="toggleMenuWidth()" title="Toggle Menu">
+                <i class="bi bi-arrow-left-right"></i><span class="menu-text">&nbsp;Toggle Menu</span>
+            </div>
+            <div class="menu-item" id="notes" title="Notes">
+                <i class="bi bi-sticky"></i><span class="menu-text" >&nbsp;Notes</span>
+                
+            </div>
+            <!-- <div class="menu-item" id="rocket">
+                <i class="bi bi-rocket"></i><span class="menu-text"> &nbsp;Launch-Pad</span>
+            </div> -->
+            <div class="menu-item" id="settings" title="Settings"> <!--onclick="toggleSubMenu(this)"-->
+                <i class="bi bi-gear"></i><span class="menu-text"> &nbsp;Settings</span>
+            </div>
+            <!-- <div class="sub-menu">
+                    <div class="menu-item"><i class="bi bi-person-lines-fill"></i>&nbsp;Preferences</div>
+                    <div class="menu-item"><i class="bi bi-cloud-check"></i> &nbsp;Tools</div>
+            </div> -->
+            
+        </div>
+        
+        <div class="theme-switch-container">
+            <div class="theme-switch" title="Activate Dark Mode">
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="menu-text">Dark Mode</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="root" class="main-content">
+        <!--content will be loaded here -->
+    </div>
+
+    <div class="footer">
+        <p>© 2025 TiNo 3.0</p>
+        <div class="time-date" id="timeDate"></div>
+    </div>
+
+    <!-- <script src="./src/assets/jQuery/jquery-3.7.1.min.js"></script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.body.style.visibility = "visible";
+          document.body.style.opacity = "1";
+        });
+    </script>
+    <!-- script to display the content after DOM is ready and styles are loaded (to avoid flashing unstyled content)-->
+    <script src="./src/assets/js/script.js"></script>
+    <!-- <script src="./src/assets/js/tino.js"></script> -->
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
